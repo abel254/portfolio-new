@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="bg-navcolor">
+    <div className="bg-gradient-to-r from-navcolor to-navright to-10%">
       <nav className="flex justify-between items-center mx-16">
         <div>
           <h1 className="py-4">

@@ -14,7 +14,9 @@ module.exports = {
       },
       colors: {
         navcolor: "#cf4859",
-        mainbottom: "#d34759",
+        navright: "#cf4859",
+        maintop: "#cb4658",
+        mainbottom: "#d14859",
         mainbutton: "#1dbf73",
         skillsintro: "#be5272",
         skillsheading: " #404145",
