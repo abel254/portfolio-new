@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <Navbar />
         <Banner />
       </div>
+      <Skills/>
     </main>
   );
 }
