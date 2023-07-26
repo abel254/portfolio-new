@@ -13,12 +13,6 @@
   --skills-bg: #fafafa;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    
-  }
-}
-
-body {
- 
+.intro{
+  @apply uppercase text-skillsintro font-bold text-xl text-center mb-5;
 }
