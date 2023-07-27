@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Newsletter from "@/components/Newsletter";
 import Projects from "@/components/Projects";
@@ -15,6 +16,7 @@ export default function Home() {
       <Skills/>
       <Projects/>
       <Newsletter/>
+      <Footer/>
     </main>
   );
 }
