@@ -111,7 +111,7 @@ const Projects = () => {
               <span className={abhaya.className}>Extreme Drift</span>
             </h2>
             <p className="text-skillstext my-5 w-80 ">
-              A simple responsive site where responsiveness is enhanced using . Hosted by Vercel.
+              A simple responsive site where responsiveness is enhanced using flexbox, grid, and relative units. Hosted by Vercel.
             </p>
             <a href="#" className="flex items-center">
               <span className="text-sm mr-2 text-mainbutton">
