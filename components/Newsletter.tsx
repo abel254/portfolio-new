@@ -19,7 +19,7 @@ const Newsletter = () => {
             placeholder="Enter your Email"
             className="border border-skillstext bg-transparent block focus:outline-none py-2 px-3 rounded-md w-full text-skillsheading"
           />
-            <button className="absolute right-0 top-50 border border-mainbutton bg-mainbutton py-2 px-10 rounded-e-md text-white font-bold text-md">Subscribe</button>
+            <button className="absolute right-0 top-50 border border-mainbutton bg-mainbutton py-2 px-10 rounded-e-md text-white font-bold text-md hover:bg-hcolor transition ease-linear duration-300">Subscribe</button>
         </div>
       </div>
     </div>
