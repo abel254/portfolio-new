@@ -7,9 +7,9 @@ import { abhaya } from "@/utils/font";
 const Banner = () => {
   return (
     <div className="bg-gradient-to-br from-maintop from-10% to-mainbottom flex-1">
-      <div className="mx-16 pr:flex items-center justify-between pr:h-full relative">
-        <div className="pr:w-10/12 pr:h-full z-20 flex flex-col items-center pr:items-start">
-          <h1 className="text-4xl pr:text-5xl font-bold text-white text-italics mt-10 pr:mt-20 text-center pr:text-start">
+      <div className="pr:mx-16 pr:flex items-center justify-between pr:h-full relative">
+        <div className="w-full pr:w-10/12 pr:h-full z-20 flex flex-col items-center pr:items-start">
+          <h1 className="text-3xl md:text-4xl pr:text-5xl font-bold text-white text-italics mt-10 pr:mt-20 text-center pr:text-start">
             <span className={`italic`}>Meet</span> Abel Muema a developer in Web
             Applications
           </h1>
