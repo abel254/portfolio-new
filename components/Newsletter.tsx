@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <div className="bg-skillsbg pt-24">
+    <div id="newsletter" className="bg-skillsbg pt-24">
       <div className="flex flex-col items-center">
         <h2 className="text-center text-3xl md:text-4xl pr:text-5xl font-bold text-skillsheading md:w-7/12 pr:w-7/12">
           Subscribe to my newsletter for updates

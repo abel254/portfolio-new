@@ -10,7 +10,7 @@ import { abhaya } from "../utils/font";
 
 const Skills = () => {
   return (
-    <div className="bg-skillsbg z-20 pb-10">
+    <div id="skills" className="bg-skillsbg z-20 pb-10">
       <div className="pr:my-15 pt-56 pr:pt-20">
       <h3 className="intro">
         current frontend development skills

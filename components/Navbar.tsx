@@ -1,16 +1,37 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('banner')
+  const [scrolled, setScrolled] = useState(false)
+
+  const handleScroll = () => {
+    if(window.scrollY > 50){
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const onUpdateLink = (value: string) => {
+    setActiveLink(value)
+  }
+
+
   return (
-    <div className="bg-gradient-to-r from-navcolor to-navright to-10% relative">
+    <div className={`${scrolled ? 'fixed top-0 right-0 bg-white':'bg-gradient-to-r from-navcolor to-navright to-10%'}  relative`}>
       <nav className="pr:flex justify-between items-center mx-16">
         <div className="flex justify-between items-center">
           <h1 className="py-4">
@@ -46,23 +67,35 @@ const Navbar = () => {
           <li className="mt-12 pr:mt-0  ml-6 font-semibold pr:text-white">
             <a
               href="#"
-              className="hover:border-b-2 transition ease-linear duration-300"
+              className={`hover:border-b-2 transition ease-linear duration-300 ${activeLink === 'banner'? 'border-b-2':''}`}
+              onClick={() => {
+                toggleMenu()
+                onUpdateLink('banner')
+              }}
             >
               <span>Home</span>
             </a>
           </li>
           <li className="mt-1.5 pr:mt-0 ml-6 font-semibold pr:text-white">
             <a
-              href="#"
-              className="hover:border-b-2 transition ease-linear duration-300"
+              href="#skills"
+              className={`hover:border-b-2 transition ease-linear duration-300 ${activeLink === 'skills'? 'border-b-2':''}`}
+              onClick={() => {
+                toggleMenu()
+                onUpdateLink('skills')
+              }}
             >
               <span>Skills</span>
             </a>
           </li>
           <li className="mt-1.5 pr:mt-0 ml-6 font-semibold pr:text-white">
             <a
-              href="#"
-              className="hover:border-b-2 transition ease-linear duration-300"
+              href="#projects"
+              className={`hover:border-b-2 transition ease-linear duration-300 ${activeLink === 'projects'? 'border-b-2':''}`}
+              onClick={() => {
+                toggleMenu()
+                onUpdateLink('projects')
+              }}
             >
               <span>Projects</span>
             </a>
@@ -71,8 +104,9 @@ const Navbar = () => {
             className={`mt-1 pr:mt-0 ml-6 font-semibold pr:text-white hidden pr:block`}
           >
             <a
-              href="#"
-              className="border-white border px-3 py-2.5 rounded hover:bg-hcolor hover:border-hcolor transition ease-linear duration-200"
+              href="#footer"
+              className={`border-white border px-3 py-2.5 rounded hover:bg-hcolor hover:border-hcolor transition ease-linear duration-200 ${activeLink === 'footer'? '':''}`}
+              onClick={() => onUpdateLink('footer')}
             >
               Let's Connect
             </a>
