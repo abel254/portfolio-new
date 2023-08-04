@@ -18,15 +18,12 @@ const Projects = () => {
           </h2>
         </div>
         <div className="flex justify-center gap-3">
-          <div className="border border-skillstext py-2 px-5 rounded-full">
+          {/* <div className="border border-skillstext py-2 px-5 rounded-full">
             <span className="text-skillstext">Amazon Clone</span>
-          </div>
-          <div className="border border-skillstext py-2 px-5 rounded-full">
-            <span className="text-skillstext">Personal Blog</span>
-          </div>
-          <div className="border border-skillstext py-2 px-5 rounded-full">
-            <span className="text-skillstext">Extreme Drift</span>
-          </div>
+          </div> */}
+          <a href="#" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Amazon Clone</a>
+          <a href="#" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Personal Blog</a>
+          <a href="#" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Extreme Drift</a>
         </div>
       </div>
 
@@ -42,7 +39,7 @@ const Projects = () => {
               rest API to create the prototype. Adds items to cart and
               calculates the total. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center">
+            <a href="#" className="flex items-center link hover:text-hcolor">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
@@ -58,6 +55,7 @@ const Projects = () => {
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  className="arrow"
                 />
               </svg>
             </a>
@@ -83,7 +81,7 @@ const Projects = () => {
             <p className="text-skillstext my-5 w-80 ">
               A simple responsive blog site for displaying multiple blog posts. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center">
+            <a href="#" className="flex items-center link">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
@@ -93,12 +91,13 @@ const Projects = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-4 h-4 stroke-mainbutton"
+                className="w-4 h-4 stroke-mainbutton "
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  className="arrow"
                 />
               </svg>
             </a>
@@ -113,7 +112,7 @@ const Projects = () => {
             <p className="text-skillstext my-5 w-80 ">
               A simple responsive site where responsiveness is enhanced using flexbox, grid, and relative units. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center">
+            <a href="#" className="flex items-center link pr-10 ">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
@@ -129,6 +128,7 @@ const Projects = () => {
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  className="arrow"
                 />
               </svg>
             </a>

@@ -22,7 +22,18 @@ module.exports = {
         skillsheading: " #404145",
         skillstext: "#7a7d85",
         skillsbg: "#fafafa",
+        hcolor: "#249045",
       },
+      keyframes: {
+        updown: {
+          '0%':{transform: 'translateY(-20px)'},
+          '50%':{transform: 'translateY(20px)'},
+          '100%':{transform: 'translateY(-20px)'},
+        }
+      },
+      animation:{
+        'astronaut': 'updown 3s linear infinite'
+      }
     },
   },
   plugins: [],

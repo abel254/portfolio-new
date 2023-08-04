@@ -11,8 +11,17 @@
   --skills-heading: #404145;
   --skills-text: #7a7d85;
   --skills-bg: #fafafa;
+  --hcolor: #249045;
 }
 
 .intro{
   @apply uppercase text-skillsintro font-bold text-xl text-center mb-5;
+}
+.link:hover .arrow{
+  transform: translateX(6px);
+  transition: all 300ms ease ;
+  stroke:var(--hcolor)
+}
+.link:hover span{
+  color: var(--hcolor);
 }
