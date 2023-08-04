@@ -15,7 +15,7 @@
 }
 
 .intro{
-  @apply uppercase text-skillsintro font-bold text-xl text-center mb-5;
+  @apply uppercase text-skillsintro font-bold text-sm pr:text-xl text-center mb-5;
 }
 .link:hover .arrow{
   transform: translateX(6px);

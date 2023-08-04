@@ -6,10 +6,10 @@ import twitter from '../public/twitter.png'
 
 const Footer = () => {
   return (
-    <div className=" mb-4 pt-10 bg-skillsbg">
-      <div className="border-t border-skillstext mx-16 flex justify-between">
-        <div className="flex mt-3">
-          <h2 className="uppercase font-bold text-4xl text-skillsheading mr-4">abel</h2>
+    <div className=" mb-4 bg-skillsbg">
+      <div className="border-t border-skillstext mx-8 pr:mx-16 flex flex-col pr:flex-row items-center justify-between">
+        <div className="flex pr:mt-3">
+          <h2 className="uppercase font-bold text-3xl pr:text-4xl text-skillsheading mr-4">abel</h2>
           <p className="text-sm text-skillstext font-bold">&copy;Personal Portfolio 2023</p>
         </div>
         <div className="flex gap-3 mt-3">
