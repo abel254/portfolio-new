@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-gradient-to-r from-navcolor to-navright to-10% relative">
-      <nav className="md:flex justify-between items-center mx-16">
+      <nav className="pr:flex justify-between items-center mx-16">
         <div className="flex justify-between items-center">
           <h1 className="py-4">
             <a
@@ -21,7 +21,7 @@ const Navbar = () => {
               abel<span className="font-normal">muema.</span>
             </a>
           </h1>
-          <div className="md:hidden" onClick={toggleMenu}>
+          <div className="pr:hidden" onClick={toggleMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -39,11 +39,11 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`md:flex ${
+          className={`pr:flex ${
             isMenuOpen ? "" : "hidden"
-          } md:static absolute top-0 left-0 md:h-auto md:w-auto h-screen w-screen z-20 md:bg-transparent bg-white`}
+          } pr:static absolute top-0 left-0 pr:h-auto pr:w-auto h-screen w-screen z-20 pr:bg-transparent bg-white`}
         >
-          <li className="mt-12 md:mt-0  ml-6 font-semibold md:text-white">
+          <li className="mt-12 pr:mt-0  ml-6 font-semibold pr:text-white">
             <a
               href="#"
               className="hover:border-b-2 transition ease-linear duration-300"
@@ -51,7 +51,7 @@ const Navbar = () => {
               <span>Home</span>
             </a>
           </li>
-          <li className="mt-1.5 md:mt-0 ml-6 font-semibold md:text-white">
+          <li className="mt-1.5 pr:mt-0 ml-6 font-semibold pr:text-white">
             <a
               href="#"
               className="hover:border-b-2 transition ease-linear duration-300"
@@ -59,7 +59,7 @@ const Navbar = () => {
               <span>Skills</span>
             </a>
           </li>
-          <li className="mt-1.5 md:mt-0 ml-6 font-semibold md:text-white">
+          <li className="mt-1.5 pr:mt-0 ml-6 font-semibold pr:text-white">
             <a
               href="#"
               className="hover:border-b-2 transition ease-linear duration-300"
@@ -68,7 +68,7 @@ const Navbar = () => {
             </a>
           </li>
           <li
-            className={`mt-1 md:mt-0 ml-6 font-semibold md:text-white hidden md:block`}
+            className={`mt-1 pr:mt-0 ml-6 font-semibold pr:text-white hidden pr:block`}
           >
             <a
               href="#"
@@ -77,7 +77,7 @@ const Navbar = () => {
               Let's Connect
             </a>
           </li>
-          <div className="md:hidden absolute right-20 top-6" onClick={toggleMenu}>
+          <div className="pr:hidden absolute right-20 top-6" onClick={toggleMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -35,6 +35,9 @@ module.exports = {
         'astronaut': 'updown 3s linear infinite'
       }
     },
+    screens: {
+      'pr':'960px'
+    }
   },
   plugins: [],
 };
