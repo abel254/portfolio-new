@@ -4,16 +4,16 @@ const Newsletter = () => {
   return (
     <div className="bg-skillsbg pt-24">
       <div className="flex flex-col items-center">
-        <h2 className="text-center text-5xl font-bold text-skillsheading w-6/12">
+        <h2 className="text-center text-4xl pr:text-5xl font-bold text-skillsheading w-7/12 pr:w-6/12">
           Subscribe to my newsletter for updates
         </h2>
-        <h4 className="text-center my-7 w-5/12 text-skillstext font-bold">
+        <h4 className="text-center my-7 w-6/12 pr:w-5/12 text-skillstext font-bold">
           Sync with my personal porfolio to automatically get updates on latest
           frontend & fullstack projects
         </h4>
       </div>
       <div className="flex justify-center">
-        <div className="flex items-center w-5/12 mt-4 mb-24 relative">
+        <div className="flex items-center w-7/12 pr:w-5/12 mt-4 mb-24 relative">
           <input
             type="email"
             placeholder="Enter your Email"

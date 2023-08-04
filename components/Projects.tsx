@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="mb-32">
         <h3 className="intro mt-10 mb-16">projects developed by abelmuema</h3>
         <div className="flex justify-center mb-16">
-          <h2 className="text-center text-bold text-5xl text-skillsheading w-6/12">
+          <h2 className="text-center text-bold text-4xl pr:text-5xl text-skillsheading w-6/12">
             <span className={abhaya.className}>
               Get a 360&deg; view of the developed web applications
             </span>
@@ -29,17 +29,17 @@ const Projects = () => {
 
       {/* right project component */}
       <div className="mx-56 mb-32">
-        <div className="flex justify-between items-center mb-20">
+        <div className="flex flex-col pr:flex-row justify-between items-center mb-20">
           <div>
             <h2 className="font-bold text-6xl text-skillsheading">
               <span className={abhaya.className}>Amazon Clone</span>
             </h2>
-            <p className="text-skillstext my-5 w-80 ">
+            <p className="text-skillstext my-5 w-80 text-center pr:text-start">
               Simplified amazon clone which fetches data from the Fake store
               rest API to create the prototype. Adds items to cart and
               calculates the total. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center link hover:text-hcolor">
+            <a href="#" className="flex items-center link hover:text-hcolor justify-center pr:justify-start mb-5">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
@@ -63,25 +63,25 @@ const Projects = () => {
           <Image
             src={amazon}
             alt="Amazon Clone"
-            className="object-cover w-5/12 h-96 rounded-md drop-shadow-md"
+            className="object-cover w-80 h-96 rounded-md drop-shadow-md"
           />
         </div>
 
         {/* left project component */}
-        <div className="flex justify-between items-center mb-20">
+        <div className="flex flex-col-reverse pr:flex-row justify-between items-center mb-20">
           <Image
             src={blog}
             alt="Amazon Clone"
-            className="object-cover w-5/12 h-96 rounded-md drop-shadow-md"
+            className="object-cover w-80 h-96 rounded-md drop-shadow-md"
           />
           <div>
             <h2 className="font-bold text-6xl text-skillsheading">
               <span className={abhaya.className}>Personal Blog</span>
             </h2>
-            <p className="text-skillstext my-5 w-80 ">
+            <p className="text-skillstext my-5 w-80 text-center pr:text-start">
               A simple responsive blog site for displaying multiple blog posts. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center link">
+            <a href="#" className="flex items-center link hover:text-hcolor justify-center pr:justify-start mb-5">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
@@ -104,15 +104,15 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center mb-20">
+        <div className="flex flex-col pr:flex-row justify-between items-center mb-20">
           <div>
             <h2 className="font-bold text-6xl text-skillsheading">
               <span className={abhaya.className}>Extreme Drift</span>
             </h2>
-            <p className="text-skillstext my-5 w-80 ">
+            <p className="text-skillstext my-5 w-80 text-center pr:text-start">
               A simple responsive site where responsiveness is enhanced using flexbox, grid, and relative units. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center link pr-10 ">
+            <a href="#" className="flex items-center link pr-10 justify-center pr:justify-start mb-5">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
@@ -136,7 +136,7 @@ const Projects = () => {
           <Image
             src={drift}
             alt="Amazon Clone"
-            className="object-cover w-5/12 h-96 rounded-md drop-shadow-md"
+            className="object-cover w-80 h-96 rounded-md drop-shadow-md"
           />
         </div>
 

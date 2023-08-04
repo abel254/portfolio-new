@@ -16,13 +16,13 @@ const Skills = () => {
         current frontend development skills
       </h3>
       <div className="flex justify-center mb-16">
-        <h2 className="text-center text-bold text-5xl text-skillsheading w-8/12">
+        <h2 className="text-center text-bold text-4xl pr:text-5xl text-skillsheading w-8/12">
           <span className={abhaya.className}>
             Developed scalable web applications with the following technologies
           </span>
         </h2>
       </div>
-      <div className="flex justify-center gap-12 mb-5">
+      <div className="flex justify-center gap-7 pr:gap-12 mb-5">
         <div className="flex flex-col items-center">
           <Image src={js} alt="Javascript" className="w-28 h-28" />
           <span className="text-md font-bold">JavaScript</span>

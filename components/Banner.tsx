@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import banner from "../public/banner.png";
 import mesh from "../public/mesh.png";
+import { abhaya } from "@/utils/font";
 
 const Banner = () => {
   return (
@@ -9,7 +10,7 @@ const Banner = () => {
       <div className="mx-16 pr:flex items-center justify-between pr:h-full relative">
         <div className="pr:w-10/12 pr:h-full z-20 flex flex-col items-center pr:items-start">
           <h1 className="text-4xl pr:text-5xl font-bold text-white text-italics mt-10 pr:mt-20 text-center pr:text-start">
-            <span className="italic">Meet</span> Abel Muema a developer in Web
+            <span className={`italic`}>Meet</span> Abel Muema a developer in Web
             Applications
           </h1>
           <h3 className="text-lg pr:text-xl text-white mt-3 pr:mt-10 w-9/12 pr:w-7/12 text-center pr:text-start">
