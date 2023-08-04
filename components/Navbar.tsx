@@ -41,7 +41,7 @@ const Navbar = () => {
         <ul
           className={`pr:flex ${
             isMenuOpen ? "" : "hidden"
-          } pr:static absolute top-0 left-0 pr:h-auto pr:w-auto h-screen w-screen z-20 pr:bg-transparent bg-white`}
+          } pr:static absolute top-0 left-0 pr:h-auto pr:w-auto h-screen w-screen z-30 pr:bg-transparent bg-white`}
         >
           <li className="mt-12 pr:mt-0  ml-6 font-semibold pr:text-white">
             <a

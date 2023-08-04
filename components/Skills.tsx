@@ -10,7 +10,8 @@ import { abhaya } from "../utils/font";
 
 const Skills = () => {
   return (
-    <div className="bg-skillsbg py-10">
+    <div className="bg-skillsbg z-20">
+      <div className="mt-20 pr:my-10 pt-5">
       <h3 className="intro">
         current frontend development skills
       </h3>
@@ -46,6 +47,7 @@ const Skills = () => {
           <Image src={css} alt="Javascript" className="w-28 h-28" />
           <span className="text-md text-bold">Tailwind CSS</span>
         </div>
+      </div>
       </div>
     </div>
   );
