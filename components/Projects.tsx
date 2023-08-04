@@ -7,7 +7,7 @@ import drift from "../public/drift.png";
 
 const Projects = () => {
   return (
-    <div>
+    <div id="projects">
       <div className="mb-32">
         <h3 className="intro mt-10 mb-16">projects developed by abelmuema</h3>
         <div className="flex justify-center mb-16">
@@ -18,15 +18,15 @@ const Projects = () => {
           </h2>
         </div>
         <div className="flex flex-col md:flex-row pr:flex-row justify-center items-center gap-3">
-          <a href="#" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Amazon Clone</a>
-          <a href="#" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Personal Blog</a>
-          <a href="#" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Extreme Drift</a>
+          <a href="#amazon" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Amazon Clone</a>
+          <a href="#blog" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Personal Blog</a>
+          <a href="#drift" className="border rounded-full py-2 px-5 border-skillstext hover:bg-skillsintro hover:border-skillsintro hover:text-white transition ease-linear duration-200">Extreme Drift</a>
         </div>
       </div>
 
       {/* right project component */}
       <div className="pr:mx-56 mx-5 mb-32">
-        <div className="flex flex-col pr:flex-row justify-between items-center mb-20">
+        <div id="amazon" className="flex flex-col pr:flex-row justify-between items-center mb-20">
           <div>
             <h2 className="font-bold text-5xl pr:text-6xl text-skillsheading text-center pr:text-start">
               <span className={abhaya.className}>Amazon Clone</span>
@@ -36,7 +36,7 @@ const Projects = () => {
               rest API to create the prototype. Adds items to cart and
               calculates the total. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center link hover:text-hcolor justify-center pr:justify-start mb-5">
+            <a href="https://amazon-clone-sigma-ivory-29.vercel.app/#" target="_blank" className="flex items-center link hover:text-hcolor justify-center pr:justify-start mb-5">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
@@ -65,7 +65,7 @@ const Projects = () => {
         </div>
 
         {/* left project component */}
-        <div className="flex flex-col-reverse pr:flex-row justify-between items-center mb-20">
+        <div id="blog" className="flex flex-col-reverse pr:flex-row justify-between items-center mb-20">
           <Image
             src={blog}
             alt="Amazon Clone"
@@ -78,7 +78,7 @@ const Projects = () => {
             <p className="text-skillstext my-5 w-80 text-center pr:text-start">
               A simple responsive blog site for displaying multiple blog posts. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center link hover:text-hcolor justify-center pr:justify-start mb-5">
+            <a href="https://personal-blog-ochre.vercel.app/" target="_blank" className="flex items-center link hover:text-hcolor justify-center pr:justify-start mb-5">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
@@ -101,7 +101,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex flex-col pr:flex-row justify-between items-center mb-20">
+        <div id="drift" className="flex flex-col pr:flex-row justify-between items-center mb-20">
           <div>
             <h2 className="font-bold text-5xl pr:text-6xl text-skillsheading text-center pr:text-start">
               <span className={abhaya.className}>Extreme Drift</span>
@@ -109,7 +109,7 @@ const Projects = () => {
             <p className="text-skillstext my-5 w-80 text-center pr:text-start">
               A simple responsive site where responsiveness is enhanced using flexbox, grid, and relative units. Hosted by Vercel.
             </p>
-            <a href="#" className="flex items-center link pr-10 justify-center pr:justify-start mb-5">
+            <a href="https://responsive-extremedrift-website-icq1n3lx8-abel254.vercel.app/#" target="_blank" className="flex items-center link pr-10 justify-center pr:justify-start mb-5">
               <span className="text-sm mr-2 text-mainbutton">
                 Take a Closer Look
               </span>
